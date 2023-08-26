@@ -1,0 +1,42 @@
+#root {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box !important;
+  background-color: #eeee;
+}
+
+.spinner {
+  position: absolute;
+  display: inline-block;
+  top: 30%;
+  left: 50%;
+}
+
+.signin-bg {
+  background-image: url("./images/imbaBackgroundSignin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.signin-form {
+  display: inline-block;
+  position: relative;
+  top: 25% !important;
+  left: 40% !important;
+}
+
+.datePicker {
+  border: 1px solid #edf2f7 !important;
+  width: 100% !important;
+  font-size: 12px !important;
+}
+
+.zeroState{
+  margin-top: 10px;
+}
+
+.searchIcon:hover{
+  cursor: pointer;
+}
