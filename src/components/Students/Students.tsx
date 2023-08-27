@@ -18,7 +18,6 @@ import {
 	Input,
 	Checkbox,
 } from "@chakra-ui/react";
-import Moment from "react-moment";
 
 import { Link } from "react-router-dom";
 import { useStoreActions, useStoreState } from "../../store/config";
@@ -313,11 +312,11 @@ const Students = () => {
 													}
 												</Td>
 												<Td>
-													{student.dateOfAdmission ? (
-														<Moment format="DD/MM/YYYY">{student.dateOfAdmission}</Moment>
-													) : (
-														""
-													)}
+													{student.dateOfAdmission
+														? moment(student.dateOfAdmission).format("DD/MM/YYYY")
+														: // <Moment format="DD/MM/YYYY">{student.dateOfAdmission}</Moment>
+
+														  ""}
 												</Td>
 												<Td>{student.session}</Td>
 											</Tr>
